@@ -1,72 +1,67 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-abstract class pet
+abstract class Employee
 {
-  int age;
-  public string _name
+  public String name;
+  public String _name
   {
-    get
-    {
-      return name;
-    }
-    set
-    {
-      name = value;
-    }
+    get { return name; }
+    set { name = value; }
   }
-  string name;
-  public int _age
+  public double luong;
+  public double _luong
   {
-    get
-    {
-      return age;
-    }
-    set
-    {
-      age = value;
-    }
+    get { return luong; }
+    set { luong = value; }
   }
-  public abstract void animalSound();
-  
-  public void animal()
+  public String loainhanvien;
+  public String _loainhanvien
   {
-    Console.WriteLine(" PET MAKE sound");
+    get { return loainhanvien; }
+    set { loainhanvien = value; }
   }
 
-}
-class dog : pet
-{
-  public override void animalSound()
+  public double tinhluong(double tongluong)
   {
-    Console.WriteLine("Dog barks");
+    if (loainhanvien == "FullTimeEmployee ")
+    {
+      tongluong = luong + luong * 0.1;
+    }
+    else
+    {
+      tongluong = luong + luong * 0.05;
+    }
+    return tongluong;
   }
 }
-class cat : pet
+class nhanvien: Employee
 {
-  public override void animalSound()
-  {
-    Console.WriteLine("Cat meows");
-  }
+  
 }
 class Program
 {
   public static void Main(string[] args)
   {
-    pet p = new dog();
-    p._name = "dog";
-    p._age = 2;
-    Console.WriteLine("Name: " + p._name);
-    Console.WriteLine("Age: " + p._age);
-    p.animalSound();
-    p.animal();
-
-    pet c = new cat();
-    c._name = "cat";
-    c._age = 3;
-    Console.WriteLine("Name: " + c._name);
-    Console.WriteLine("Age: " + c._age);
-    c.animalSound();
-    c.animal();
+    Console.WriteLine("Nhap so luong nhan vien: ");
+    int n = int.Parse(Console.ReadLine());
+   nhanvien[] ds = new nhanvien[n];
+    for (int i = 0; i < n; i++)
+    {
+      ds[i] = new nhanvien();
+      Console.WriteLine("Nhap ten nhan vien: ");
+      ds[i]._name = Console.ReadLine();
+      Console.WriteLine("Nhap luong nhan vien: ");
+      ds[i]._luong = double.Parse(Console.ReadLine());
+      Console.WriteLine("Nhap loai nhan vien: ");
+      ds[i]._loainhanvien = Console.ReadLine();
+    }
+    for (int i = 0; i < n; i++)
+    {
+      Console.WriteLine("Ten nhan vien: " + ds[i]._name);
+      Console.WriteLine("Luong nhan vien: " + ds[i]._luong);
+      Console.WriteLine("Loai nhan vien: " + ds[i]._loainhanvien);
+      Console.WriteLine("Tong luong nhan vien: " + ds[i].tinhluong(ds[i]._luong));
+    }
   }
    
 }
