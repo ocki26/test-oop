@@ -1,0 +1,14 @@
+E:\test oop\Testoop\bin\Debug\net9.0\Testoop.exe
+E:\test oop\Testoop\bin\Debug\net9.0\Testoop.deps.json
+E:\test oop\Testoop\bin\Debug\net9.0\Testoop.runtimeconfig.json
+E:\test oop\Testoop\bin\Debug\net9.0\Testoop.dll
+E:\test oop\Testoop\bin\Debug\net9.0\Testoop.pdb
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.GeneratedMSBuildEditorConfig.editorconfig
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.AssemblyInfoInputs.cache
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.AssemblyInfo.cs
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.csproj.CoreCompileInputs.cache
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.dll
+E:\test oop\Testoop\obj\Debug\net9.0\refint\Testoop.dll
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.pdb
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.genruntimeconfig.cache
+E:\test oop\Testoop\obj\Debug\net9.0\ref\Testoop.dll
