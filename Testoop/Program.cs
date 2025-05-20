@@ -1,52 +1,72 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-class tinhdientich
+abstract class pet
 {
-  private int _chieudai;
-  private int _chieurong;
-  public int chieudai
+  int age;
+  public string _name
   {
     get
     {
-      return _chieudai;
+      return name;
     }
     set
     {
-      _chieudai = value;
+      name = value;
     }
   }
-  public int chieurong
+  string name;
+  public int _age
   {
     get
     {
-      return _chieurong;
+      return age;
     }
     set
     {
-      _chieurong = value;
+      age = value;
     }
   }
-  public int dientich
+  public abstract void animalSound();
+  
+  public void animal()
   {
-    get
-    {
-      return _chieudai * _chieurong;
-    }
+    Console.WriteLine(" PET MAKE sound");
+  }
+
+}
+class dog : pet
+{
+  public override void animalSound()
+  {
+    Console.WriteLine("Dog barks");
+  }
+}
+class cat : pet
+{
+  public override void animalSound()
+  {
+    Console.WriteLine("Cat meows");
   }
 }
 class Program
 {
-  static void Main(string[] args)
+  public static void Main(string[] args)
   {
-    Console.WriteLine("Nhap chieu dai:");
-    int chieudai = int.Parse(Console.ReadLine());
-    Console.WriteLine("Nhap chieu rong:");
-    int chieurong = int.Parse(Console.ReadLine());
-    tinhdientich s1 = new tinhdientich();
-    s1.chieudai = chieudai;
-    s1.chieurong = chieurong;
-    Console.WriteLine("Dien tich hinh chu nhat la: " + s1.dientich);
+    pet p = new dog();
+    p._name = "dog";
+    p._age = 2;
+    Console.WriteLine("Name: " + p._name);
+    Console.WriteLine("Age: " + p._age);
+    p.animalSound();
+    p.animal();
 
+    pet c = new cat();
+    c._name = "cat";
+    c._age = 3;
+    Console.WriteLine("Name: " + c._name);
+    Console.WriteLine("Age: " + c._age);
+    c.animalSound();
+    c.animal();
   }
    
 }

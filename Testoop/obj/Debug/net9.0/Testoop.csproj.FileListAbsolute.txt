@@ -12,3 +12,4 @@ E:\test oop\Testoop\obj\Debug\net9.0\refint\Testoop.dll
 E:\test oop\Testoop\obj\Debug\net9.0\Testoop.pdb
 E:\test oop\Testoop\obj\Debug\net9.0\Testoop.genruntimeconfig.cache
 E:\test oop\Testoop\obj\Debug\net9.0\ref\Testoop.dll
+E:\test oop\Testoop\obj\Debug\net9.0\Testoop.sourcelink.json
