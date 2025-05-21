@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Testoop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f50a572584909cc50923ba6e45200ddb63320f30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f4e185648b1d494ef09971b8e4eed994bff55a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Testoop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Testoop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
